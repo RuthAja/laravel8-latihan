@@ -13,6 +13,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        // TODO dri pada pengulangan $this secara berulang, lakukan 1x $this dengan menjadikan array
+        // $this->call(UsersSeeder::class);
+        // $this->call(TasksSeeder::class);
+        $this->call([TasksSeeder::class, UsersSeeder::class]);
     }
 }

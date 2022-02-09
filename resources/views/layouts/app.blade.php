@@ -12,8 +12,10 @@
 
 <body>
     <x-navbar></x-navbar>
-    <h1>{{ $slot }}</h1>
+    <div class="pt-4">
+        {{ $slot }}
+    </div>
 </body>
-<script href='/js/app.js'></script>
+<script src='/js/app.js'></script>
 
 </html>
